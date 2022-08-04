@@ -21,6 +21,7 @@ agent any
         }  
         stage ('Building dll') {
             steps {
+                 sh "dotnet restore Demo.csproj"
                sh "dotnet build Demo.sln"
             }           
         }
