@@ -21,7 +21,7 @@ agent any
         }  
         stage ('Building dll') {
             steps {
-               sh "dotnet build dotnet-hello-world.sln"
+               sh "dotnet build Demo.sln"
             }           
         }
     
